@@ -1,0 +1,37 @@
+.sound_b{
+    color: black;
+    font-size: 10px;
+    text-align:center;
+}
+.font{
+    font:12px "黑体";
+    color:black;
+    text-align: center;
+}
+#footer>div:last-child p{
+    font-size: 14px;
+}
+#footer_f{
+    background: #efefef;
+}
+#footer{
+    margin-top:6rem;
+}
+ul{
+    list-style: none;
+}
+.service {
+    display: block;
+    line-height: 30px;
+    border-radius:30px;
+    margin-left: 8.5rem;
+    width:6rem;
+    color: white;
+    height: 30px;
+    font-size: 14px;
+    background: #0bbbef;
+}
+.tel{
+    color: #00c3f5;
+    font-size: 25px;
+}

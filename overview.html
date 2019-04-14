@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>商品概述</title>
+    <link rel="icon" href="img/logo/logo.ico">
+    <style>
+        body{
+            margin:0
+        }
+        .container{
+            text-align: center;
+        }
+        img{
+            width: 30%;
+            margin-top: 3rem;
+        }
+        ul{
+            list-style: none;
+        }
+        .header{
+            background: black;
+            color: white;
+        }
+        .header{
+            height: 5rem;
+            display: flex;
+            justify-content: space-around;
+        }
+        .header p{
+            font-size: 26px;
+            line-height: 5rem;
+            margin:0;
+        }
+        .header ul{
+            display: flex;
+            justify-content: space-around;
+            width: 10%;
+            line-height: 5rem;
+            margin: 0;
+        }
+        .font_big{
+            font-size: 40px;
+        }
+        .d1{
+            background-image: radial-gradient(800px at 50% 10%,#4a5255,#000);
+            color: white;
+            position: relative;
+            height: 50rem;
+        }
+        .d1 h2{
+            margin-top: 0;
+            padding-top: 4rem;
+            font-size: 48px;
+            margin-bottom: 0.2rem;
+        }
+        .d1 h1{
+            font-size: 58px;
+            margin-top: 0.2rem;
+        }
+        .imgd1{
+            position: absolute;
+            left: 39%;
+            top:30%;
+            width: 30rem;
+        }
+        .img_1{
+            position: absolute;
+            width: 30rem;
+            left: 39%;
+            top:23%;
+            transition: all linear 2s;
+        }
+        .d2{
+            height: 50rem;
+            overflow: hidden;
+        }
+        .d2 h2{
+            padding-top: 14rem;
+        }
+        .d2 span{
+            font-size: 16px;
+            display: block;
+        }
+        .imgd2{
+            margin-top: 9rem;
+            width:67rem;
+        }
+        .img_2{
+            margin-top: 6rem;
+            width:67rem;
+            transition: all linear 2s;
+        }
+        .d3{
+            color: white;
+            background: url("img/details/section-3.jpg") no-repeat;
+            background-size: cover;
+            height: 51rem;
+        }
+        .d3 h2{
+            padding-top: 5rem;
+        }
+        .d4{
+            color: white;
+            background: url("img/details/section-4-bg_b11fd62.jpg") no-repeat;
+        }
+        .d4 h3{
+            padding-top: 5rem;
+        }
+        .md_0{
+            margin-bottom: 0 !important;
+        }
+       .d4 .pading_0{
+           padding-top: 0rem !important;
+           margin-top:1rem;
+       }
+       .d5{
+           position: relative;
+           height: 43.2rem;
+           overflow: hidden;
+       }
+       .imgd5{
+           position: relative;
+           top:6rem;
+       }
+       .img_5{
+           position: relative;
+           transition: all linear 2s;
+           top:-1rem;
+       }
+        .d6{
+            background: url("img/details/section-6.jpg") no-repeat;
+            background-size: 100%;
+            height: 57.1rem;
+            color: white;
+        }
+        .d6h2{
+            margin-top: 9rem;
+        }
+        .d7{
+            background: black;
+            color: white;
+            position: relative;
+            height: 72rem   ;
+            overflow: hidden;
+        }
+        .d7 h2{
+            width:75rem ;
+        }
+        .d7h2{
+            margin-top: 17rem;
+        }
+        .d7 div{
+            width: 29rem;
+           margin-left: 23rem;
+        }
+        .img1d7{
+            position: absolute;
+            width: 27rem;
+            left: 38rem;
+            top: 19rem;
+        }
+        .img1_7{
+            position: absolute;
+            width: 27rem;
+            left: 38rem;
+            top: 13rem;
+            transition: all linear 2s;
+        }
+        .img2d7{
+            position:absolute ;
+            width: 27rem;
+            left: 56rem;
+            top:-1rem
+
+        }
+        .img2_7{
+            position:absolute ;
+            width: 27rem;
+            left: 56rem;
+            top:3rem;
+            transition: all linear 2s;
+        }
+        .d8{
+            background: url("img/details/section-9.jpg") no-repeat center;
+            height: 65.8rem;
+        }
+        .d8 h2{
+            margin-left: 23rem;
+        }
+        .d8h2{
+            margin-top:11rem
+        }
+        .d8 p{
+            width: 35rem;
+            margin-left: 59.5rem;
+        }
+        .d9{
+            background: url("img/details/section-10.jpg") no-repeat center;
+            height: 65rem;
+            color: white;
+        }
+        .d9 h2{
+            margin-top: 16rem;
+            margin-left: -50rem;
+        }
+        .d9 p{
+            width: 29rem;
+            margin-top: 2rem;
+            margin-left: 25rem;
+        }
+        .d9 img{
+            margin-left: -31rem;
+            margin-top: 8rem;
+        }
+        .d10{
+            height: 66rem;
+            overflow: hidden;
+        }
+        .imgd10{
+            margin-top:15rem;
+            margin-left:-56rem ;
+        }
+        .img_10{
+            margin-top:10rem;
+            margin-left:-56rem ;
+            transition: all linear 2s;
+        }
+        .d10 h2{
+            margin-left: 20rem;
+            margin-top: -45rem;
+        }
+        .d10 p{
+            width: 24rem;
+            margin-top: 2rem;
+            margin-left: 59rem;
+        }
+        .d11{
+            background: black;
+            color: white;
+            position: relative;
+            height: 81rem;
+        }
+        .d11h2{
+            margin-top: 9rem;
+        }
+        .d11 p{
+            width:36rem ;
+            margin-left: 42rem;
+        }
+        .d11 video{
+            position: absolute;
+            width: 100%;
+            left: 0rem;
+        }
+        iframe{
+            width: 1140px;
+            height: 29rem;
+        }
+        .oct_0{
+            opacity: 0;
+        }
+        .oct_1{
+            opacity: 1;
+            transition: all linear 2s;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <p>魅族X8</p>
+            <ul>
+                <li>概述</li>
+                <li>参数</li>
+                <li>立即购买</li>
+            </ul>
+        </div>
+        <div class="d1">
+            <div class="oct_0">
+                <h2>魅族 X8</h2>
+                <h1>准旗舰游戏拍照手机</h1>
+            </div>
+            <img src="img/details/phone-1.png" alt="" class="imgd1"/>
+        </div>
+        <div class="d2">
+            <table></table>
+            <h2 class="oct_0 font_big">更趁手的定制化全面屏</h2>
+            <span class="oct_0">魅族 X8 配备了 18.5:9 比例的 6.2 英寸定制化屏幕，柔软顺畅的刘海弧线带来的是高达 89.6% 的屏占</span><br/>
+            <span class="oct_0">比。同价位颇为罕见 COF 封装工艺，更是为魅族 X8 提供了仅 1.7mm 的左右边框与超窄下边框。</span>
+            <img src="img/details/phone-2.jpg" alt="" class="imgd2"/>
+        </div>
+        <div class="d3">
+            <table></table>
+            <h2 class="font_big oct_0">高通骁龙 710</h2>
+            <p class="oct_0">高通骁龙 710 内集成了多核人工智能引擎，使得魅族 X8 天生具备神经元网络处理能力。高达 2.2GHz </p>
+            <p class="oct_0">的主频，让你可以时刻感受纯正的性能体验。魅族 X8 带来的绝非只有强劲动力，Hexagon 685 AI 芯片</p>
+            <p class="oct_0">与 CPU、GPU 无缝协作，为续航与性能取得了高效平衡。</p>
+        </div>
+        <div class="d4">
+            <table></table>
+            <h3 class="font_big md_0 oct_0">跑得更快，存得更多 </h3>
+            <h3 class="font_big pading_0 oct_0">可选 6GB+128GB 轻奢组合</h3>
+            <p class="oct_0">魅族 X8 提供了高达 6GB 的运行内存和海量 128GB 的存储闪存选择。搭配先进的骁龙 710 处理器和 </p>
+            <p class="oct_0">Flyme 独家软件优化，为你带来更优秀的使用体验。</p>
+            <img src="img/details/phone-3.png" alt=""/>
+        </div>
+        <div class="d5">
+            <table></table>
+            <h2 class="oct_0 font_big md_0">Dual PD 全像素双核对焦</h2>
+            <h2 class="oct_0 font_big pading_0">疾速拍，畅快玩</h2>
+            <p class="oct_0">魅族 X8 将索尼 IMX362/三星 2L7 作为主相机，ƒ/1.9 超大光圈、1.4μm 超大感光面积、6P 定制镜头都</p>
+            <p class="oct_0">是这颗 CMOS 强大的代表词。不止于硬件，算法方面也不含糊，魅族 X8 内置虹软优化算法，搭配 </p>
+            <p class="oct_0">Dual PD 全像素双核对焦，随手一拍，立马出片。</p>
+            <img src="img/details/phone-4.jpg" alt="" class="imgd5"/>
+        </div>
+        <div class="d6">
+            <table></table>
+            <h2 class="oct_0 font_big d6h2">2000 万 AI 智能美颜相机</h2>
+            <p class="oct_0 ">2000 万像素毫无疑问彰显着魅族 X8 的自拍实力。我们将智能背景虚化算法与虹软 AI 智能美颜算法融</p>
+            <p class="oct_0">入其中，让你遇见更美的自己。</p>
+        </div>
+        <div class="d7">
+            <table></table>
+            <h2 class="font_big oct_0 d7h2">更全面的全面屏手势</h2>
+            <div class="oct_0">不仅好看，而且好用。魅族 X8 人性化的全面屏手势便是例证。你只需在屏幕底部上滑即可返回、长滑回到桌面、长滑停留呼出多任务。
+                另外，屏幕左右边缘均支持相同的手势操作。Super mBack 和安卓导航栏也悉数保留，手势依旧，更为简洁。</div>
+            <img src="img/details/phone-8.png" alt="" class="img1d7"/>
+            <img src="img/details/phone-9.png" alt="" class="img2d7"/>
+        </div>
+        <div class="d8">
+            <table></table>
+            <h2 class="oct_0 font_big md_0 d8h2">焕然一新 里里外外</h2>
+            <h2 class="oct_0 font_big pading_0">Android O</h2>
+            <p class="oct_0">魅族 X8 采用 Android O 底层，对应用提速、游戏性能、滑动优化多方面进行高效智能调控。Flyme 游戏模式 3.0 还带来了「火力全开」功能，不仅可以自动调配内存资源策略，还能为游戏提供高优先级的网络传输，让体验更美好。</p>
+        </div>
+        <div class="d9">
+            <table></table>
+            <h2 class="font_big oct_0">大电池 长续航</h2>
+            <p class="oct_0">3210mAh 典型值容量电池搭配高通骁龙 710 省电核心，辅以 Flyme 智能续航调配机制，为魅族 X8 提供了高效长续航。</p>
+            <img src="img/details/3210_6d66031.png" alt=""/>
+        </div>
+        <div class="d10">
+            <table></table>
+            <img src="img/details/phone-11.jpg" alt="" class="imgd10"/>
+            <h2 class="font_big oct_0">双重安全 两种解锁</h2>
+            <p class="oct_0">我们为魅族 X8 搭配了背面指纹识别传感器，并且同时支持支付宝、微信指纹支付。前置 2000 万像素更额外支持人脸解锁 2.0 功能，多方面解决安全之忧。</p>
+        </div>
+        <div class="d11">
+            <table></table>
+            <h2 class="font_big md_0 d11h2 oct_0">亮瓷堆栈工艺</h2>
+            <h2 class="pading_0 font_big oct_0">更亮眼，更轻薄</h2>
+            <p class="oct_0">魅族 X8 薄至 7.8mm 的机身，不仅得益于精湛的内部结构堆叠设计，更源自于我们创新式的亮瓷堆栈工艺。幻蓝色的加入，让光线下的魅族 X8 更显璀璨夺目。</p>
+            <video src="img/details/x8_f3be1c0.mp4" loop="true" autoplay></video>
+        </div>
+        <iframe src="footer.html" frameborder="0" scrolling="0"></iframe>
+    </div>
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script>
+
+//        第三个动画 imgy 原来样式 imgx 图片现在样式 font 字体样式
+        function animat({box:box,elem:elemf,font:font,imgy:imgy,imgx:imgx}){
+            $(box).mouseenter(function(){
+                $(font).removeClass("oct_0").addClass("oct_1");
+                $(elemf).removeClass(imgy).addClass(imgx)
+            });
+        }
+// 第一个动画
+        animat({box:".d1",elem:".imgd1",font:".d1 .oct_0",imgy:"imgd1",imgx:"img_1"});
+//        第二个动画
+        animat({box:".d2",elem:".imgd2",font:".d2 .oct_0",imgy:"imgd2",imgx:"img_2"});
+        animat({box:".d3",font:".d3 .oct_0"});
+        animat({box:".d4",font:".d4 .oct_0"});
+        animat({box:".d5",elem:".imgd5",font:".d5 .oct_0",imgy:"imgd5",imgx:"img_5"});
+        animat({box:".d6",font:".d6 .oct_0"});
+//        d7单独写
+        $(".d7").mouseenter(function(){
+            $(".d7 .oct_0").removeClass("oct_0").addClass("oct_1");
+           $(".img1d7").removeClass("img1d7").addClass("img1_7");
+         $(".img2d7").removeClass("img2d7").addClass("img2_7")
+        });
+
+        animat({box:".d8",font:".d8 .oct_0"});
+        animat({box:".d9",font:".d9 .oct_0"});
+        animat({box:".d10",elem:".imgd10",font:".d10 .oct_0",imgy:"imgd10",imgx:"img_10"});
+        animat({box:".d11",font:".d11 .oct_0"});
+//  视频播放
+        $(".d11").mouseenter(function(){
+            var v=document.querySelector("video");
+            if(v.paused==true){
+//                v.play();
+             v.setAttribute("autoplay",true)
+                v.setAttribute("controls",true)
+            }
+        })
+    </script>
+</body>
+</html>

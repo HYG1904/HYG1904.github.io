@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>购物车</title>
+    <link rel="icon" href="img/logo/logo.ico">
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <link rel="stylesheet" href="css/cart.css"/>
+</head>
+<body>
+<div class="container">
+    <header>
+        <div class="logo">
+            <a href="./index.html" ><img src="img/cart/下载.png" alt=""></a>
+        </div>
+        <ul>
+            <li>购物车</li>
+            <li>></li>
+            <li>确认订单</li>
+            <li>></li>
+            <li>在线支付</li>
+            <li>></li>
+            <li>完成</li>
+        </ul>
+        <div class="info">
+            <p>我的订单</p>
+            <p>依索依的商城</p>
+        </div>
+    </header>
+    <div class="affirm">
+        <div class="user_info">
+            <h3>收货人信息</h3>
+            <div>
+                <ul>
+                    <li>张三</li>
+                    <li>158425612236</li>
+                </ul>
+                <p>内蒙古自治区呼和浩特市和林格尔县盛乐经济工业园区内蒙古师范大学盛乐校区17号楼</p>
+                <div>
+                    <img src="img/cart/下载 2.png" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="user_info_incre">
+            <img src="img/cart/increase.png" alt="">
+            <p>添加新地址</p>
+        </div>
+    </div>
+    <div class="goods_info">
+        <h3>确认订单信息</h3>
+        <table cellpadding="0" cellspacing="0">
+            <thead>
+                <tr>
+                    <th>供应商：魅族</th>
+                    <th>单价</th>
+                    <th>数量</th>
+                    <th>小计</th>
+                    <th>配送方式</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <img src="img/cart/shop_img.jpg" alt="">
+                        <div>
+                            <p data-click="dname">魅族 Note9</p>
+                            <p style="font-size: 14px;
+                            color: #999;">全网通公开版 幻黑 4+64GB</p>
+                        </div>
+                    </td>
+                    <td data-click="price">￥1398.00</td>
+                    <td data-click="num">1</td>
+                    <td data-click="total">￥1398.00</td>
+                    <td>快递配送：运费￥0.00</td>
+                </tr>
+                <tr>
+                    <td colspan="5">
+                        <p>发票类型：电子发票  修改</p>
+                        <p>发票抬头：默认为收货人姓名</p>  
+                    </td>
+                   
+                </tr>
+                <tr>
+                    <td colspan="5">备注：</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div class="pay">
+        <h3>选择支付方式</h3>
+        <div class="p_style">
+            <ul>
+                <li>支付宝</li>
+                <li><input type="radio" name="zhifubao"></li>
+                <li>
+                    <img src="img/cart/huabei.png" alt="" ></li>
+                <li>
+                    <input type="radio"  name="zhifubao"></li>
+                <li><img src="img/cart/zhifubao.png" alt=""></li>
+            </ul>
+            <ul>
+                <li>微信支付</li>
+                <li><input type="radio"></li>
+                <li><img src="img/cart//weixin.png" alt=""></li>
+            </ul>
+            <ul>
+                <li>网上银行</li>
+                <li><input type="radio" name="bank"></li>
+                <li><img src="img/cart/china_con_bank.png" alt=""></li>
+                <li><input type="radio" name="bank"></li>
+                <li><img src="img/cart/china_bank.png" alt=""></li>
+            </ul>
+            
+        </div>
+        <ul>
+            <li data-click="p_total">总金额￥1398.00</li>
+            <li>运费￥0.00</li>
+            <li data-click="p_total1">应付￥1398.00</li>
+            <li>
+                <p>下单并支付</p>
+            </li>
+        </ul>
+    </div>
+    <footer>
+            <iframe src="./footer.html" frameborder="0" scrolling="0"></iframe>
+    </footer>
+    
+</div>
+<script src="js/jquery.min.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/cart.js"></script>
+</body>
+</html>

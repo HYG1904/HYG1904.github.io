@@ -1,0 +1,225 @@
+.container{
+    width: 1140px;
+    margin: 0 auto;
+}
+header iframe{
+    width:100%;
+    height: 3rem;
+}
+footer iframe{
+    width: 100%;
+    height: 29rem;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+.dt_title{
+    width: 100%;
+    height: 80px;
+    background: #f6f8fb;
+}
+.dt_title h3{
+    float: left;
+    margin-left: 2rem;
+    line-height: 80px;
+}
+.dt_title ul{
+    float:left;
+    display: flex;
+    width: 40%;
+    line-height: 80px;
+    font-size: 16px;
+    margin-left: 28.5rem;
+    justify-content: space-around;
+}
+.buy_img{
+    float: left;
+    width: 50%;
+    text-align: center;
+}
+.buy_img>img{
+    width: 70%;
+}
+.buy_img .sm_img{
+    width:2rem;
+    height: 2.5rem;
+    margin-top:-1rem;
+}
+.buy_img .dt_ride{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width:70%;
+    margin:0 auto;
+}
+.dt_ride img{
+    cursor:pointer
+}
+.model{
+    float:left;
+    width: 50%;
+}
+.model h3{
+    color: #262626;
+    font-weight: 700;
+}
+/*����Ϊ������ʽ*/
+.font_red{
+    font-size: 14px;
+    color: #e22841;
+}
+.font_sm{
+    font-size: 12px;
+    color: #8c8c8c;
+}
+#model .discount{
+    width: 37%;
+}
+#model .purchased{
+    width: 67%;
+    font-size: 14px;
+}
+#model .shipments{
+    width: 60%;
+}
+#model .service{
+    font-size: 12px;
+}
+#model .delivery{
+    width: 30%;
+}
+.delivery>li:last-child{
+    font-size: 14px;
+}
+.version ul{
+    width: 100%;
+}
+.version li{
+    border: 1px solid;
+    width: 24%;
+    text-align: center;
+    font-size: 14px;
+    border-color:   #BFBFBF;
+}
+.version>ul>li:first-child{
+    border: 0px;
+    text-align: left;
+}
+#model span{
+    font-size:12px;
+    color: red;
+}
+#model .count{
+    width: 47%;
+}
+#model .count li{
+    width: 40%;
+    border: 0;
+}
+#model .count input{
+    width: 29%;
+    text-align: center;
+}
+#model .buy_car button{
+    background-color: #27b3ff;
+    color: white;
+}
+.buy:after{
+    content: "";
+    display: block;
+    clear: both;
+}
+.particulars h3,.params h3{
+    background: #f4f4f4;
+    padding: 2rem;
+    margin-top: 3rem;
+}
+.recommend img{
+    width: 100%;
+}
+.recommend img:hover{
+    width:120%;
+    transition: all 2s linear;
+}
+.recommend div{
+    width:200px;
+    height: 166px;
+    overflow: hidden;
+}
+.font{
+    font:14px "����";
+    color:black;
+    text-align: center;
+}
+/* ������ʽ */
+.pm_list{
+    width:70%;
+    float:left;
+    /*margin-top:2rem;*/
+}
+.pm_list ul{
+    margin-top:2rem;
+}
+.pm_list li{
+    margin-left: 4.6rem;
+}
+.pm_list ul:first-child li:last-child{
+    margin-left: 3rem;
+}
+.pm_list ul:last-child li:nth-child(2){
+    margin-left: 6.6rem;
+}
+.pm_list p{
+    margin-top: 0.2rem;
+    margin-bottom: 0.2rem;
+}
+.params{
+    float:left
+}
+.clear{
+    content:"";
+    display: block;
+    clear: both;
+}
+.dt_ride>div{
+    width:17rem;
+    overflow: hidden;
+}
+.dt_ride>div>ul{
+    width: 26rem;
+    overflow: hidden;
+    /*margin-left:-4rem;*/
+}
+.dt_ride>div>ul img{
+    width:67.2px;
+}
+.hidden{
+    display: none;
+}
+.show{
+    display: block
+}
+.red{
+    border-color: red !important;
+}
+.version li{
+    cursor: pointer;
+}
+[data-click="prev"], [data-click="next"]{
+    width:23px;
+    height: 54px;
+    display: block;
+    border:0px;
+    margin-bottom: 11px;
+}
+[data-click="prev"]{
+    background:white url("../img/details/disabled-prev.png") no-repeat;
+    background-position:center center;
+}
+[data-click="next"]{
+    background:white url("../img/details/disable-next.png") no-repeat;
+    background-position:center center;
+}

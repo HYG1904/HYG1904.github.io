@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>商品详情</title>
+    <link rel="icon" href="img/logo/logo.ico">
+    <link rel="stylesheet" href="css/header.css"/>
+    <link rel="stylesheet" href="css/bootstrap.css"/>
+    <link rel="stylesheet" href="css/details.css"/>
+</head>
+<body>
+    <div class="container">
+        <header  id="header" class="row pt-3 m-0 pb-3 position-relative">
+            <div class="col-sm-2 col-md-3 col-lg-1">
+                <a href="./index.html" class="logo">MEIZU</a>
+            </div>
+            <div class="col-lg-6 bar " data-click="show">
+                <ul class="d-flex justify-content-around">
+                    <li><a href="#phone">手机</a></li>
+                    <li><a href="#Headset">声学</a></li>
+                    <li><a href="#parts">配件</a></li>
+                    <li><a href="#life">生活</a></li>
+                    <li><a href="#flyme">Flyme</a></li>
+                    <li><a href="#footer">服务</a></li>
+                    <li><a href="">专卖店</a></li>
+                    <li><a href="">APP下载</a></li>
+                </ul>
+            </div>
+            <div class="col-sm-5 col-md-5 col-lg-2">
+                <input type="text" placeholder="魅族 note9">
+            </div>
+            <div class="col-sm-5 col-md-4 col-lg-3">
+                <ul class="d-flex justify-content-around">
+                    <li class="position-relative">
+                        <a href="">
+                            <img src="img/header/icon-user-white@2x_e5c6494.png" alt="" data-log="user">
+                        </a>
+                        <ul class="position-absolute" data-log="login">
+                            <li class="first"><a href="./login.html">立即登录</a></li>
+                            <li class="second"><a href="./reg.html">立即注册</a></li>
+                            <Li class="hidden"><a href="">修改资料</a></Li>
+                            <li><a href="">我的订单</a></li>
+                            <li><a href="./cart.html">我的购物车</a></li>
+                            <li><a href="">M码通道</a></li>
+                            <li data-click="lgout" class="hidden">注销</li>
+                        </ul>
+                    </li>
+
+                    <li>
+                        <a href="">
+                            <img src="img/header/shopping-cart-white@2x_bdcf50b.png" alt="" data-click="num">
+                            <div data-click="num_val">0</div>
+                        </a>
+                    </li>
+                    <li>
+                        <img src="img/header/按钮.png" alt="" data-click="btn"/>
+                    </li>
+                </ul>
+            </div>
+        </header>
+        <!-- 配置选择 -->
+        <section>
+            <div class="dt_title">
+                <h3>魅族 16th</h3>
+                <ul>
+                    <li><a href="./index.html">首页</a></li>
+                    <li><a href="./overview.html">概述</a></li>
+                    <li><a href="">性能</a></li>
+                    <li><a href="">相机</a></li>
+                    <li><a href="">参数</a></li>
+                    <li><a href="">常见问题</a></li>
+                </ul>
+            </div>
+            <div class="buy">
+                <div></div>
+                <div class="buy_img">
+                    <img src="img/params-lg/16th_big.jpg" alt="" data-click="img_lg"/>
+                    <div class="dt_ride">
+                        <button data-click="prev"></button>
+                        <div>
+                            <ul class="d-flex pl-0">
+                                <li><img src="img/params-sm/16th_sm1.jpg" alt=""/></li>
+                                <li><img src="img/params-sm/16th_sm2.jpg" alt=""/></li>
+                                <li><img src="img/params-sm/16th_sm4.jpg" alt=""/></li>
+                                <li><img src="img/params-sm/16th_sm3.jpg" alt=""/></li>
+                                <li><img src="img/params-sm/16th_sm3.jpg" alt=""/></li>
+                            </ul>
+                        </div>
+                        <button data-click="next"></button>
+                    </div>
+                </div>
+                <div class="model" id="model">
+                    <h3>魅族16th</h3>
+                    <p class="font_red">限量领券更优惠 | 骁龙845 屏下指纹</p>
+                    <div class="jumbotron w-100 pt-1 pl-2 pb-1 mb-3">
+                        <h1 data-click="price" style="color: red;">¥ 2498.00</h1>
+                        <ul class="d-flex p-0 justify-content-between discount">
+                            <li class="font_red">优惠券</li>
+                            <li class="font_red">满2498减100</li>
+                            <li class="font_red">更多&gt;</li>
+                        </ul>
+                        <ul class="d-flex p-0 justify-content-between purchased">
+                            <li>加价购</li>
+                            <li>另外再加15元，即可换购超值商品</li>
+                            <li>立即加购&gt;</li>
+                        </ul>
+                    </div>
+                    <ul class="d-flex p-0 justify-content-between pl-2 shipments">
+                        <li class="font_sm">支&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;持</li>
+                        <li class="font_sm"><img src="img/details/model_true.png" alt=""/>花呗分期</li>
+                        <li class="font_sm"><img src="img/details/model_true.png" alt=""/>顺丰发货</li>
+                        <li class="font_sm"><img src="img/details/model_true.png" alt=""/>7天无理由退货</li>
+                    </ul>
+                    <ul class="d-flex p-0 justify-content-between pl-2 delivery">
+                        <li class="font_sm">配送服务</li>
+                        <li>重庆 重庆市 <img src="img/details/model_down.png" alt=""/></li>
+                    </ul>
+                    <p class="font_sm pl-2 d-inline-block">本商品由 魅族 负责发货并提供售后服务</p>
+                    <p class="d-inline-block"><img src="img/details/model_service.png" alt=""/><a href="" class="service">在线客服</a></p>
+                    <div class="version">
+                        <ul class="d-flex pl-2 justify-content-between pr-5 mb-1">
+                            <li class="font_sm">型&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;号</li>
+                            <li>魅族 16th</li>
+                            <li>魅族 16th Plus</li>
+                            <li>魅族 16 X</li>
+                        </ul>
+                        <ul  class="d-flex pl-2 justify-content-between pr-5 mb-1">
+                            <li></li>
+                            <li>魅族 V8 高配版</li>
+                            <li>魅族 X8</li>
+                            <li>魅族 Note9</li>
+                        </ul>
+                        <ul  class="d-flex pl-2 justify-content-between pr-5 mb-1">
+                            <li class="font_sm">颜色分类</li>
+                            <li>静夜黑</li>
+                            <li>远山白</li>
+                            <li>极光蓝</li>
+                        </ul>
+                        <ul class="d-flex pl-2 justify-content-between pr-5 mb-1">
+                            <li class="font_sm">内存容量</li>
+                            <li>6+64GB</li>
+                            <li>6+128GB</li>
+                            <li>8+128GB</li>
+                        </ul>
+                        <ul class="d-flex pl-2 justify-content-between pr-5 mb-1">
+                            <li class="font_sm">选择套餐</li>
+                            <li>官方标配</li>
+                            <li>套餐一 <span>省129</span></li>
+                            <li>套餐二</li>
+                        </ul>
+                        <ul class="d-flex pl-2 justify-content-between pr-5 mb-1 count">
+                            <li class="font_sm">数&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;量</li>
+                            <li>
+                                <button data-click="reduce">-</button><input type="text" value="1" readonly data-click="value"/><button data-click="increase">+</button>
+                            </li>
+
+                        </ul>
+                    </div>
+                    <div class="buy_car">           
+                        <button class="btn" data-click="buy">立即购买</button>                       
+                        <button class="btn" data-click="addCart">加入购物车</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- 参数 -->
+        <div class="params">
+            <table></table>
+            <h3>参数</h3>
+            <div class="pm_list">
+                <ul class="d-flex">
+                    <li>
+                        <p>高通骁龙 710 平台</p>
+                        <p class="font_sm">Hexagon 685 AI 处理芯片</p>
+                    </li>
+                    <li>
+                        <p>超窄左右边框</p>
+                        <p class="font_sm">定制化 6.2 英寸全面屏</p>
+                    </li>
+                    <li>
+                        <p>超高屏占比</p>
+                        <p class="font_sm">旗舰级 COF 工艺</p>
+                    </li>
+                </ul>
+                <ul class="d-flex ">
+                    <li>
+                        <p>可选 6GB 超大内存</p>
+                        <p class="font_sm">LPDDR4X 高速省电规格</p>
+                    </li>
+                    <li>
+                        <p>人脸解锁 2.0</p>
+                        <p class="font_sm">前置 2000 万像素</p>
+                    </li>
+                    <li>
+                        <p>硬件级 AI 场景识别</p>
+                        <p class="font_sm">Dual PD 全像素双核对焦</p>
+                    </li>
+                </ul>
+                <ul class="d-flex ">
+                    <li>
+                        <p>AI 智能提速</p>
+                        <p class="font_sm">Flyme 游戏模式 3.0</p>
+                    </li>
+                    <li>
+                        <p>全面屏手势交互</p>
+                        <p class="font_sm">升级 Android O 内核</p>
+                    </li>
+                    <li>
+                        <p></p>
+                        <p class="font_sm"></p>
+                    </li>
+                </ul>
+            </div>
+            <img src="img/params-lg/16th_big.jpg" alt="" class="w-25">
+        </div>
+        <!-- 服务说明 -->
+        <div class="clear"></div>
+        <div class="particulars">
+            <h3 class="pl-5">服务说明</h3>
+            <a href=""><img src="img/details/product_safeguard.jpg" alt="" class="w-100"/></a>
+            <h3>为你推荐</h3>
+            <div class="recommend">
+                <ul class="d-flex p-0 justify-content-around">
+                    <li><a href="">
+                        <div class=""><img src="img/index/floor1_1.jpg" alt=""/></div>
+                        <p class="font mb-0">魅族 Note9 </p>
+                        <p class="font mb-0 ">立即购买</p>
+                    </a></li>
+                    <li><a href="">
+                        <div><img src="img/index/floor1_2.jpg" alt=""/> </div>
+                        <p class="font mb-0">魅族X8 </p>
+                        <p class="font mb-0 ">最高直降300</p>
+                    </a></li>
+                    <li><a href="">
+                        <div><img src="img/index/floor1_3.jpg" alt=""/></div>
+                        <p class="font mb-0">以旧换新 </p>
+                        <p class="font mb-0 ">免费寄件 专业检测</p>
+                    </a></li>
+                    <li><a href="">
+                        <div><img src="img/index/floor1_4.jpg" alt=""/></div>
+                        <p class="font mb-0">魅族 Note9 </p>
+                        <p class="font mb-0 ">延保活动登记</p>
+                    </a></li>
+                    <li><a href="">
+                        <div><img src="img/index/floor1_4.jpg" alt=""/></div>
+                        <p class="font mb-0">魅族 Note9 </p>
+                        <p class="font mb-0 ">延保活动登记</p>
+                    </a></li>
+                </ul>
+            </div>
+        </div>
+        <footer>
+            <iframe src="footer.html" frameborder="0" scrolling="0"></iframe>
+        </footer>
+    </div>
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/details.js"></script>
+</body>
+</html>

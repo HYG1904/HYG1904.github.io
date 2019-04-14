@@ -1,0 +1,65 @@
+header{
+    background: #c8d6ef;
+}
+#header img{
+    height: 1.7rem;
+}
+#header input{
+    border-radius: 30rem;
+    border: 1px solid black;
+}
+#header ul{
+    margin-bottom:0
+}
+ul{
+    list-style: none;
+}
+[data-log="login"]{
+    width: 4rem;
+    background: white;
+    padding-left: 0.5rem;
+    font-size: 12px;
+    left:-0.9rem;
+    top:1.8rem;
+    border: 1px solid white;
+    border-radius: 5px;
+    display: none;
+}
+[data-click="num"]{
+    position: relative;
+}
+[data-click="num"]+div{
+    position: absolute;
+    width: 17px;
+    height: 17px;
+    border-radius: 50%;
+    line-height: 17px;
+    text-align: center;
+    top:0px;
+    left: 180px;
+    color: white;
+    background: red;
+}
+.logo{
+    font: bold 27px "Georgia"
+}
+[data-click="btn"]{
+    display: none;
+}
+::-webkit-input-placeholder { /* WebKit browsers */
+    color: #999;
+    font-size: 13px;
+    padding-left: 1rem;
+}
+
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+    color: #999;
+    font-size: 13px;
+    padding-left: 1rem;
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10+ */
+    color: #999;
+    font-size: 13px;
+    padding-left: 1rem;
+}
