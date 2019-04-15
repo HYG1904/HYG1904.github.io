@@ -208,6 +208,9 @@ a{
 .version li{
     cursor: pointer;
 }
+.version>ul:first-child>li:last-child{
+    margin-left: 6px;
+}
 [data-click="prev"], [data-click="next"]{
     width:23px;
     height: 54px;

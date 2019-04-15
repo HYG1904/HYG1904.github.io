@@ -6,11 +6,17 @@ $("[data-log=login]").mouseleave(function(){
     $("[data-log=login]").hide()
 });
 //        选中参数后，边框变红
-$(".version li").click(function(){
-    console.log($(this));
-    $(".version li").removeClass("red");
-    $(this).addClass("red")
-});
+function reRed(li){
+    $(li).click(function(){
+        console.log($(this));
+        $(li).removeClass("red");
+        $(this).addClass("red")
+    });
+}
+reRed(".version>ul:first-child li")
+reRed(".version>ul:nth-child(2) li")
+reRed(".version>ul:nth-child(3) li")
+reRed(".version>ul:nth-child(4) li")
 //        修改购买商品数量 pn
 var pn=1;
 $("[data-click=increase]").click(function(){
@@ -47,6 +53,9 @@ $("[data-click=increase]").click(function(){
 //                修改小图
             $(".dt_ride>div>ul").append(li)
         }
+        // 修改购物列表中的文字
+        $(".version>ul:first-child>li:last-child").html(title)
+        // console.log($(".version>ul:first-child>li:last-child"))
 //            修改商品名字
         $(".dt_title h3").html(title);
         $(".model h3").html(title);
@@ -72,6 +81,16 @@ $("[data-click=increase]").click(function(){
             var src=$(this).attr("src");
             $("[data-click=img_lg]").attr("src",src)
         })
+        // 服务器调用数据后，将名字和购买列表中的匹配上
+        var lis=$(".version li")
+        // console.log(lis)
+        // console.log(title)
+        for(var li of lis){
+            // console.log($(li).html())        
+            if($(li).html()==title){
+                $(li).addClass("red")
+            }
+        }
         //        小图片点击移动
         var a=$(".dt_ride>div>ul>li").length;
         var prev=$("[data-click=prev]");
@@ -120,10 +139,12 @@ function addCart(){
             alert("您还没有添加到购物车呢")
         }else{
             var num=$("[data-click=value]").val();
-            var model=$(".red").html()
+            var model= $(".version>ul:first-child>li:last-child").html()
+            console.log(model)
             var price=$("[data-click=price]").html()
-             console.log(model)
-            location.href="cart.html?unum="+num+"&umodel="+model+"&price="+price;
+            var color=$(".version>ul:nth-child(2) .red").html()
+            var memory=$(".version>ul:nth-child(3) .red").html()
+             location.href="cart.html?unum="+num+"&umodel="+model+"&price="+price+"&color="+color+"&memory="+memory+"&pid="+id;
         }
         
     })
